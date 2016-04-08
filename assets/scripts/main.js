@@ -19,6 +19,9 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        if ( $('nav').hasClass('navbar-fixed-top') ) {
+          $('body').css( 'padding-top', '50px');
+        }
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
