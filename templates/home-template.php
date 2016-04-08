@@ -3,7 +3,7 @@
  * Template Name: Home Template
  */
 ?>
-<section class="home-container container">
+<section class="home-container container animated bounce">
   <h1>This is the home template</h1>
 
 </section>
