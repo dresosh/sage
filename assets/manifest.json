@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "localhost/testsite"
+    "devUrl": "localhost:8888"
   }
 }
