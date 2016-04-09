@@ -22,6 +22,41 @@
         if ( $('nav').hasClass('navbar-fixed-top') ) {
           $('body').css( 'padding-top', '50px');
         }
+
+        if ( $( 'section' ).hasClass( 'bounceInLeft') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('slideOutRight');
+          });
+        } else if ( $( 'section' ).hasClass( 'bounceInRight') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('slideOutLeft');
+          });
+        } else if ( $( 'section' ).hasClass( 'fadeInUp') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('fadeOutDown');
+          });
+        } else if ( $( 'section' ).hasClass( 'bounceInUp') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('fadeOutDownBig');
+          });
+        } else if ( $( 'section' ).hasClass( 'flipInY') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('flipOutY');
+          });
+        } else if ( $( 'section' ).hasClass( 'zoomIn') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('zoomOut');
+          });
+        } else if ( $( 'section' ).hasClass( 'rollIn') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('rollOut');
+          });
+        } else if ( $( 'section' ).hasClass( 'bounceIn') ) {
+          $('nav a').on( 'click', function(){
+            $('section').addClass('bounceOut');
+          });
+        }
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
